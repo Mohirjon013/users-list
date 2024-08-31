@@ -19,7 +19,7 @@ function renderUsers(arr){
             <p><strong>Username:</strong> ${item.username}</p>
             <p><strong>Email:</strong> ${item.email}</p>
             <p><strong>Phone number:</strong> ${item.phone}</p>
-            <button onclick ="handleUsersPostShow(${item.id})" class="bg-green-600 text-white font-bold border-none w-full p-1 rounded-lg mt-5 border-[2px] border-transparent hover:bg-transparent hover:txet-green-600 hover:border-green-600">Show Posts</button>
+            <button onclick ="handleUsersPostShow(${item.id})" class="bg-green-600 text-white font-bold w-full p-1 rounded-lg mt-5 border-[2px] border-transparent hover:bg-transparent hover:text-green-600 hover:border-green-600 duration-300">Show Posts</button>
         `
         ElUsersList.appendChild(elItem)
     });
@@ -53,7 +53,7 @@ function renderPost(arr){
             <p><strong>User Id:</strong> ${item.userId}</p>
             <p><strong>Title:</strong> ${item.title}</p>
             <p><strong>Body:</strong> ${item.body}</p>
-            <button onclick="handlePostsCommentShow(${item.id})"  class="bg-green-600 text-white font-bold border-none w-full p-1 rounded-lg mt-5 border-[2px] border-transparent hover:bg-transparent hover:txet-green-600 hover:border-green-600">Show Comments</button>
+            <button onclick="handlePostsCommentShow(${item.id})"  class="bg-green-600 text-white font-bold w-full p-1 rounded-lg mt-5 border-[2px] border-transparent hover:bg-transparent hover:text-green-600 hover:border-green-600 duration-300">Show Comments</button>  
         `
         elPostsList.appendChild(elItem)
     });
