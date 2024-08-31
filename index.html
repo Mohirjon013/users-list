@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-600 overflow-y-hidden">
+    
+    <div class="flex space-x-5 p-10">
+        <div class="w-[33%] p-5 rounded-lg bg-white">
+            <h2 class="text-center text-[25px] font-bold">User List </h2>
+            <ul class="users-list space-y-7 h-[70vh] overflow-y-auto">
+                
+            </ul>
+        </div>
+        <div class="w-[33%] p-5 rounded-lg bg-white">
+            <h2 class="text-center text-[25px] font-bold">Posts List </h2>
+            <ul class="posts-list space-y-5 h-[70vh] overflow-y-auto"></ul>
+        </div>
+        <div class="w-[33%] p-5 rounded-lg bg-white">
+            <h2 class="text-center text-[25px] font-bold">Comments List </h2>
+            <ul class="comments-list space-y-5 h-[70vh] overflow-y-auto"></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
